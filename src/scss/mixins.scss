@@ -1,0 +1,14 @@
+// Language mixin
+@mixin ltr {
+    html:not([dir='rtl']) & , .translated-ltr &  {
+      // added to fix page corruption after using google translate
+      @content;
+    }
+  }
+  
+  @mixin rtl {
+    html[dir='rtl'] & , .translated-rtl & {
+      // added to fix page corruption after using google translate 
+      @content;
+    }
+  }

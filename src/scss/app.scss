@@ -4,10 +4,13 @@
 @import "~bootstrap/scss/mixins";
 
 // Optional
-@import "~bootstrap/scss/reboot";
-@import "~bootstrap/scss/type";
-@import "~bootstrap/scss/images";
-@import "~bootstrap/scss/code";
 @import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/utilities/display";
+@import "~bootstrap/scss/utilities/flex";
+@import "~bootstrap/scss/utilities/spacing";
 
-@import "/src/scss/style.scss";
+@import "/src/scss/mixins";
+@import "/src/scss/branding";
+
+@import "/src/scss/style";
+

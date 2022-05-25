@@ -1,2 +1,7 @@
-.div,
-.tawfik{display:block;}
+
+
+body{
+    font-family: $font_en;
+}
+$ProjectName:"ex-header";
+@import "/src/scss/dev-header/dev-header";
