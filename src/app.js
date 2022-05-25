@@ -1,2 +1,5 @@
-import 'bootstrap/js/dist/util';
-import 'bootstrap/js/dist/dropdown';
+
+import "./scss/app.scss";
+var $ = require("jquery");
+window.jQuery = $;
+window.$ = $;

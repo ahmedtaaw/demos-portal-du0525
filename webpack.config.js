@@ -9,9 +9,11 @@ module.exports = {
 
   module: {
     rules: [
+    
       {
         test: /\.(sa|sc|c)ss$/,
         use: [
+          // MiniCssExtractPlugin.loader,
           "style-loader",
           "css-loader",
           {
