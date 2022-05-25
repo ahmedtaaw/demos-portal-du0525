@@ -4,6 +4,8 @@ body{
     font-family: $font_en;
     display: block;
     z-index: 10; 
+    margin: 0 auto;
 }
 $ProjectName:"ex-header";
 @import "/src/scss/dev-header/dev-header";
+@import "/src/scss/main-slider/main-slider";

@@ -1,0 +1,60 @@
+.main-slider-wrapper{
+    position: relative;
+    color:$white-color;
+
+    .main-slider{
+        margin-left: 10%;
+        position: relative;
+        z-index: 1;
+    }
+    .floated-banner{
+        position: relative;
+    }
+    .floated-text{
+        position: absolute;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.3);
+        padding: 25px;
+        margin: 25px 100px;
+        h4{
+            font-size: 20px;
+            font-weight: 300;
+        }
+        h2{
+            font-family: "Merriweather", Times, serif;
+            font-size: 52px;
+        }
+    }
+    .main-slider-pagingInfo{
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 25px 100px;
+        font-family: "Merriweather", Times, serif;
+            font-size: 52px;
+            z-index: 2;
+    }
+    .slick-dots{
+        position: absolute;
+        z-index: 1;
+        bottom: 40px;
+        right: 100px;
+        width: auto;
+    li {
+        margin: 0 7px;
+            button{
+            border: 1px solid $white-color;
+            border-radius: 50%;
+            &:before{
+                    font-size: 0;
+                }
+            }
+            &.slick-active{
+                button{
+                    background-color: $white-color;
+                    border: 1px solid transparent;
+                }
+            }
+        }
+    }
+}
