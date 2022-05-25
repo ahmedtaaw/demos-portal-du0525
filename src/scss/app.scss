@@ -9,6 +9,12 @@
 @import "~bootstrap/scss/utilities/flex";
 @import "~bootstrap/scss/utilities/spacing";
 
+//plugin
+@import "/src/scss/slick-fix";
+@import "~slick-carousel/slick/slick";
+@import "~slick-carousel/slick/slick-theme";
+
+//demos-portal
 @import "/src/scss/mixins";
 @import "/src/scss/branding";
 
