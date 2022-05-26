@@ -21,8 +21,12 @@
     }
     &__wrapper {
       height: $header-header-height;
-      
-      
+      flex-flow: row;
+      @media #{$sm}{
+        flex-flow: column;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
     }
     
   
@@ -36,10 +40,14 @@
   
       @media #{$sm}{
         width: calc(100% - #{$header-navbar-button-width * $header-navbar-buttons-sm-number});
+      margin-bottom: 25px;
       }
       &__logo-menu {
         height: $header-logo-menu-height;
         display: flex;
+        @media #{$sm}{
+          padding: 0;
+        }
         @at-root{
           .scrolled &{
             height: $header-scrolled-logo-menu-height;
@@ -98,6 +106,11 @@
         }
         position: absolute;
         top: 0;
+        
+      }
+      @media #{$md} {
+        position: static;
+        width: 100%;
       }
   
       &__upper-navigation-menu {
