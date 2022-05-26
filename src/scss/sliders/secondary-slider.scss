@@ -19,6 +19,9 @@
         @media #{$md} {
             font-size: 28px;
         }
+        @media #{$sm} {
+            font-size: 14px;
+        }
     }
     @media #{$xxl} {
         --container-offset: calc(calc(80vw - 1250px) / 2);
@@ -28,4 +31,5 @@
     @media #{$md} {
         margin-left: 0;
     }
+
 }

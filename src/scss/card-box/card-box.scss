@@ -39,6 +39,24 @@
             }
         }
     }
+
+    @media #{$md} {
+        a.ghost-link{
+            &+ .card-box{
+                margin-bottom: 15px;
+                img{
+                    z-index: 1;
+                    width: 100%;
+                }
+                &>.info{
+                    p.button-primary{
+                        bottom: -5px;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .ghost-link{
