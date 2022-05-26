@@ -41,3 +41,23 @@ h6 {
 h1{
     font-size: 52px;
 }
+
+.background-darkgrey{
+    background-color: $grey-900;
+    color: $grey-200;
+    
+    a{
+        color: $grey-200;
+        text-decoration: none;
+        &:hover{
+            color: $white-color;
+        }
+    }
+}
+footer{
+    ul{list-style: none;
+    li{
+        margin: 0 10px;
+    }
+}
+}
