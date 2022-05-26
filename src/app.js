@@ -4,8 +4,14 @@ window.jQuery = $;
 window.$ = $;
 require("select2");
 require('slick-carousel');
-
-
+//datepicker
+require('Litepicker');
+const pickerfrom = new Litepicker({
+    element: document.getElementById('datepicker-from')
+});
+const pickerto = new Litepicker({
+    element: document.getElementById('datepicker-to')
+});
 
 //slick slider
 var $status = $('.main-slider-pagingInfo');
@@ -25,19 +31,19 @@ $(document).ready(function () {
         speed: 500,
         cssEase: 'linear'
     })
-    
+
     $(".secondary-slider").slick({
         infinite: true,
-          speed: 500,
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          arrows: false,
-          focusOnSelect: true,
-          touchThreshold: 10,
-          swipeToSlide: true,
+        speed: 500,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: false,
+        focusOnSelect: true,
+        touchThreshold: 10,
+        swipeToSlide: true,
     });
     $('.form-group select').select2({
-        placeholder: function(){
+        placeholder: function () {
             $(this).data('placeholder');
         },
         minimumResultsForSearch: -1
