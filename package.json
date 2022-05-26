@@ -23,6 +23,7 @@
     "autoprefixer": "^10.3.7",
     "css-loader": "^6.7.1",
     "export-loader": "^1.0.52",
+    "font-awesome": "^4.7.0",
     "install": "^0.13.0",
     "litepicker": "^2.0.12",
     "node-sass": "^7.0.1",

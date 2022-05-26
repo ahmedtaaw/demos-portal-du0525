@@ -20,6 +20,9 @@ html {
 @import "~bootstrap/scss/forms";
 
 //plugin 
+//font-awsome
+@import "/src/scss/font-awesome-fix";
+@import "~font-awesome/scss/font-awesome"; 
 //plugin--slick
 @import "/src/scss/slick-fix";
 @import "~slick-carousel/slick/slick";
