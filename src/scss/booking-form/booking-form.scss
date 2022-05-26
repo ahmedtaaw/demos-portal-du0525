@@ -47,6 +47,13 @@
             font-size: 38px;
         }
     }
+    @media #{$md} {
+        height: 64px;
+        width: auto;
+        i {
+            font-size: 24px;
+        }
+    }
 }
 
 //select 2 fallback

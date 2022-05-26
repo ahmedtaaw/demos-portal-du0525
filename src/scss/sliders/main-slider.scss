@@ -6,6 +6,9 @@
         margin-left: 10%;
         position: relative;
         z-index: 1;
+        @media #{$md} {
+            margin-left: 0;
+        }
     }
     .floated-banner{
         position: relative;
@@ -19,10 +22,16 @@
         h4{
             font-size: 20px;
             font-weight: 300;
+            @media #{$md} {
+                font-size: 14px;
+            }
         }
         h2{
             font-family: "Merriweather", Times, serif;
             font-size: 52px;
+            @media #{$md} {
+                font-size: 28px;
+            }
         }
     }
     .main-slider-pagingInfo{
@@ -33,6 +42,9 @@
         font-family: "Merriweather", Times, serif;
             font-size: 52px;
             z-index: 2;
+            @media #{$md} {
+                font-size: 28px;
+            }
     }
     .slick-dots{
         position: absolute;
