@@ -16,5 +16,16 @@
         font-family: "Merriweather", Times, serif;
         font-size: 52px;
         color: $white-color;
+        @media #{$md} {
+            font-size: 28px;
+        }
+    }
+    @media #{$xxl} {
+        --container-offset: calc(calc(80vw - 1250px) / 2);
+        --available-space: calc(100vw - var(--container-offset));
+        margin-left: var(--container-offset);
+    }
+    @media #{$md} {
+        margin-left: 0;
     }
 }
