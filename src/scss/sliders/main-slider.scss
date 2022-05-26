@@ -12,8 +12,8 @@
     }
     .floated-text{
         position: absolute;
-        bottom: 0;
-        background-color: rgba(0,0,0,0.3);
+        bottom: 100px;
+        background-color: rgba(0,0,0,0.2);
         padding: 25px;
         margin: 25px 100px;
         h4{
@@ -37,9 +37,19 @@
     .slick-dots{
         position: absolute;
         z-index: 1;
-        bottom: 40px;
+        bottom: 140px;
         right: 100px;
         width: auto;
+        &:before{
+                content: "";
+                display: block;
+                background-color: white;
+                height: 2px;
+                width: 47px;
+                position: relative;
+                left: -50%;
+                top: 17px;
+        }
     li {
         margin: 0 7px;
             button{
