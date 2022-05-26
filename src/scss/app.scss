@@ -17,11 +17,16 @@ html {
 // Optional
 @import "~bootstrap/scss/grid";
 @import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/forms";
 
 //plugin 
+//plugin--slick
 @import "/src/scss/slick-fix";
 @import "~slick-carousel/slick/slick";
 @import "~slick-carousel/slick/slick-theme";
+//plugin--select2
+
+@import "~select2/dist/css/select2";
 
 //demos-portal
 @import "/src/scss/mixins";

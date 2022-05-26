@@ -2,7 +2,7 @@ import "./scss/app.scss";
 var $ = require("jquery");
 window.jQuery = $;
 window.$ = $;
-
+require("select2");
 require('slick-carousel');
 
 
@@ -35,5 +35,11 @@ $(document).ready(function () {
           focusOnSelect: true,
           touchThreshold: 10,
           swipeToSlide: true,
+    });
+    $('.form-group select').select2({
+        placeholder: function(){
+            $(this).data('placeholder');
+        },
+        minimumResultsForSearch: -1
     });
 });
