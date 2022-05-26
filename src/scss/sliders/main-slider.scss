@@ -19,6 +19,7 @@
         background-color: rgba(0,0,0,0.2);
         padding: 25px;
         margin: 25px 100px;
+        
         h4{
             font-size: 20px;
             font-weight: 300;
@@ -31,6 +32,17 @@
             font-size: 52px;
             @media #{$md} {
                 font-size: 28px;
+            }
+           
+        }
+        @media #{$sm} {
+            margin: 10px;
+            bottom: 0;
+            h4{
+                font-size: 12px;
+            }
+            h2{
+                font-size: 16px;
             }
         }
     }
@@ -45,6 +57,10 @@
             @media #{$md} {
                 font-size: 28px;
             }
+            @media #{$sm} {
+                font-size: 13px;
+                margin: 25px;
+            }
     }
     .slick-dots{
         position: absolute;
@@ -52,6 +68,10 @@
         bottom: 140px;
         right: 100px;
         width: auto;
+        @media #{$sm} {
+            bottom: 19px;
+            right: 6px;
+        }
         &:before{
                 content: "";
                 display: block;
