@@ -6,6 +6,10 @@ body{
     z-index: 10; 
     margin: 0 auto;
 }
+img{
+    max-width: 100%;
+}
 $ProjectName:"ex-header";
 @import "/src/scss/dev-header/dev-header";
-@import "/src/scss/main-slider/main-slider";
+@import "/src/scss/sliders/main-slider";
+@import "/src/scss/sliders/secondary-slider";

@@ -1,0 +1,20 @@
+.secondary-slider{
+    --container-offset: calc(calc(108vw - 1250px) / 2);
+    --available-space: calc(100vw - var(--container-offset));
+    margin-left: var(--container-offset);
+    .floated-banner{
+        position: relative;
+        margin-left: 15px;
+        .floated-text{
+            position: absolute;
+            z-index: 2;
+            bottom: 0;
+            padding: 25px 55px;
+        }
+    }
+    h2{
+        font-family: "Merriweather", Times, serif;
+        font-size: 52px;
+        color: $white-color;
+    }
+}

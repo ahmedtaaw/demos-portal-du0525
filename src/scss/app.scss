@@ -1,3 +1,14 @@
+html {
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
 // Required
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
@@ -5,11 +16,9 @@
 
 // Optional
 @import "~bootstrap/scss/grid";
-@import "~bootstrap/scss/utilities/display";
-@import "~bootstrap/scss/utilities/flex";
-@import "~bootstrap/scss/utilities/spacing";
+@import "~bootstrap/scss/utilities";
 
-//plugin
+//plugin 
 @import "/src/scss/slick-fix";
 @import "~slick-carousel/slick/slick";
 @import "~slick-carousel/slick/slick-theme";
@@ -17,6 +26,7 @@
 //demos-portal
 @import "/src/scss/mixins";
 @import "/src/scss/branding";
+@import "/src/scss/layout/layout";
 
 @import "/src/scss/style";
 

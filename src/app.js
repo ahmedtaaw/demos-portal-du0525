@@ -25,4 +25,15 @@ $(document).ready(function () {
         speed: 500,
         cssEase: 'linear'
     })
+    
+    $(".secondary-slider").slick({
+        infinite: true,
+          speed: 500,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: false,
+          focusOnSelect: true,
+          touchThreshold: 10,
+          swipeToSlide: true,
+    });
 });

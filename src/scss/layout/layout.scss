@@ -1,0 +1,43 @@
+//links and btns
+a,
+.text-primary-color{
+    color: $primary-color;
+    text-decoration: none;
+}
+
+.text-grey-color{
+    color: $grey-800;
+}
+
+.button-primary{
+    background-color: $primary-color;
+    color: $white-color;
+    text-transform: uppercase;
+    display: inline-flex;
+    font-weight: 600;
+    &--large{
+        padding: 20px 35px;
+    }
+}
+
+//h1,h2,h3,h4,h5,h6
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+  font-family: "Merriweather", Times, serif;
+}
+
+
+h1{
+    font-size: 52px;
+}
