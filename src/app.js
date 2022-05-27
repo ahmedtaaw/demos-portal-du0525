@@ -29,8 +29,10 @@ $(document).ready(function () {
         infinite: true,
         fade: true,
         speed: 500,
-        cssEase: 'linear'
-    })
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 3000
+    });
 
     $(".secondary-slider").slick({
         infinite: true,
@@ -41,7 +43,10 @@ $(document).ready(function () {
         focusOnSelect: true,
         touchThreshold: 10,
         swipeToSlide: true,
+        autoplay: true,
+        autoplaySpeed: 2000
     });
+    
     $('.form-group select').select2({
         placeholder: function () {
             $(this).data('placeholder');

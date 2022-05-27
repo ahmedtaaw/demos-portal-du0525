@@ -23,6 +23,11 @@
         h4{
             font-size: 20px;
             font-weight: 300;
+            opacity: 0;
+            bottom: -20px;
+            position: relative;
+            transition: all ease 0.9s;
+            transition-delay: 0.5s;
             @media #{$md} {
                 font-size: 14px;
             }
@@ -30,6 +35,11 @@
         h2{
             font-family: "Merriweather", Times, serif;
             font-size: 52px;
+            opacity: 0;
+            bottom: -20px;
+            position: relative;
+            transition: all ease 0.7s;
+            transition-delay: 0.3s;
             @media #{$md} {
                 font-size: 28px;
             }
@@ -43,6 +53,20 @@
             }
             h2{
                 font-size: 16px;
+            }
+        }
+    }
+    .slick-active{
+        .floated-text{
+            h4{
+                
+                opacity: 1;
+                bottom: 0;  
+            }
+            h2{
+                
+                opacity: 1;
+                bottom: 0;
             }
         }
     }
