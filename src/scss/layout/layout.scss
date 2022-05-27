@@ -15,6 +15,7 @@ a,
     text-transform: uppercase;
     display: inline-flex;
     font-weight: 600;
+    transition: all ease 0.5s;
     &--large{
         padding: 20px 35px;
         @media #{$md} {
@@ -23,6 +24,9 @@ a,
         @media #{$sm} {
             padding: 5px 10px;
         }
+    }
+    &:hover{
+        background-color: $primary-color2;
     }
 }
 

@@ -27,6 +27,13 @@
             }
             
         }
+        .card-box-image{
+        overflow: hidden;
+       
+    }
+        img{
+            transition: all ease .5s; /* Animation */
+        }
     }
     a.ghost-link:hover{
         &+ .card-box{
@@ -36,6 +43,11 @@
                     bottom: -5px;
                     opacity: 1;
                 }
+            }
+
+            img{
+                transform: scale(1.2);
+                opacity:0.8;
             }
         }
     }
@@ -47,6 +59,7 @@
                 img{
                     z-index: 1;
                     width: 100%;
+                    
                 }
                 &>.info{
                     p.button-primary{

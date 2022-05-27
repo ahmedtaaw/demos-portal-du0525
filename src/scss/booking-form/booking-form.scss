@@ -44,6 +44,7 @@
     justify-content: center;
     height: 134px;
     font-size: 0;
+    transition: all ease 0.5s;
 
     span {
         display: flex;
@@ -59,6 +60,9 @@
         i {
             font-size: 24px;
         }
+    }
+    &:hover{
+        background-color: $primary-color2;
     }
 }
 
