@@ -45,6 +45,7 @@
       &__logo-menu {
         height: $header-logo-menu-height;
         display: flex;
+        padding: 0;
         @media #{$sm}{
           padding: 0;
         }
@@ -78,15 +79,7 @@
             align-items: center;
             height:100%;
           }
-          img {
-            min-height: $header-logo-height;
-            max-height: $header-scrolled-header-height;
-            @at-root{
-              .scrolled &{
-                min-height: $header-scrolled-logo-height;
-              }
-            }
-          }
+          
         }
       }
      
@@ -119,8 +112,10 @@
         font-size: $header-upper-navigation-menu-font-size;
         font-weight: $header-upper-navigation-menu-font-weight;
         li {
-          padding: 0 5px;
+          padding: 0 10px;
           height: 100%;
+          position: relative;
+          top: -5px;
           div {
             height: 100%;
             a {

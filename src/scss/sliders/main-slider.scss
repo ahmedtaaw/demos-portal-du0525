@@ -15,10 +15,10 @@
     }
     .floated-text{
         position: absolute;
-        bottom: 100px;
+        bottom: 35px;
         background-color: rgba(0,0,0,0.2);
         padding: 25px;
-        margin: 25px 100px;
+        margin: 25px 85px;
         
         h4{
             font-size: 20px;
@@ -74,7 +74,7 @@
         position: absolute;
         right: 0;
         top: 0;
-        margin: 25px 100px;
+        margin: 37px 106px;
         font-family: "Merriweather", Times, serif;
             font-size: 52px;
             z-index: 2;
@@ -89,8 +89,8 @@
     .slick-dots{
         position: absolute;
         z-index: 1;
-        bottom: 140px;
-        right: 100px;
+        bottom: 113px;
+        right: 80px;
         width: auto;
         @media #{$sm} {
             bottom: 19px;
@@ -103,14 +103,16 @@
                 height: 2px;
                 width: 47px;
                 position: relative;
-                left: -50%;
+                left: -54%;
                 top: 17px;
         }
     li {
-        margin: 0 7px;
+        margin: 0 4px;
             button{
             border: 1px solid $white-color;
             border-radius: 50%;
+            height: 17px;
+    width: 17px;
             &:before{
                     font-size: 0;
                 }
