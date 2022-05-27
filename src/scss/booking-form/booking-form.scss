@@ -1,5 +1,5 @@
 .booking-form {
-    margin-top: -120px;
+    margin-top: -94px;
     z-index: 2;
     position: relative;
     @media #{$sm} {
@@ -21,6 +21,7 @@
     label {
         color: $grey-800;
         font-size: 14px;
+        margin-bottom: 5px;
     }
 
     select {
@@ -30,7 +31,8 @@
     .form-group {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-end;
+    padding-bottom: 11px;
     }
 }
 
@@ -91,6 +93,7 @@
         width: 100%;
         position: relative;
         z-index: 1;
+        padding-bottom: 15px;
     }
 
     i.fa {
@@ -103,7 +106,7 @@
     }
 }
 .date-label{
-    padding-bottom: 10px;
+    padding-bottom: 14px;
 }
 .date-wrap{
     border-bottom: 1px solid $grey-700;
