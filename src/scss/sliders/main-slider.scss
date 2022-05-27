@@ -1,13 +1,17 @@
+$a: 100%;
+$b: 100px;
 .main-slider-wrapper{
     position: relative;
     color:$white-color;
 
     .main-slider{
-        margin-left: 10%;
+        margin-left: 10.5%;
         position: relative;
         z-index: 1;
-        @media #{$md} {
-            margin-left: 0;
+        width: Calc(#{$a} - #{$b});
+            @media #{$md} {
+                margin-left: 0;
+                width: 100%;
         }
     }
     .floated-banner{
@@ -15,8 +19,7 @@
     }
     .floated-text{
         position: absolute;
-        bottom: 35px;
-        
+        bottom: 53px;
         padding: 25px;
         margin: 25px 85px;
         
@@ -89,8 +92,8 @@
     .slick-dots{
         position: absolute;
         z-index: 1;
-        bottom: 113px;
-        right: 80px;
+        bottom: 133px;
+        right: 130px;
         width: auto;
         @media #{$sm} {
             bottom: 19px;
