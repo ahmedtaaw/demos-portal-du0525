@@ -26,8 +26,10 @@ html {
 
 //plugin 
 //font-awsome
-@import "/src/scss/font-awesome-fix";
-@import "~font-awesome/scss/font-awesome"; 
+//@import "/src/scss/font-awesome-fix";
+//@import "~font-awesome/scss/font-awesome"; 
+//ico-moon
+@import "/src/scss/fonts/ico-moon.scss";
 //plugin--slick
 @import "/src/scss/slick-fix";
 @import "~slick-carousel/slick/slick";
