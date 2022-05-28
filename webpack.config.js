@@ -8,7 +8,8 @@ module.exports = {
   output: {
     filename: "[name][contenthash].js",
     path: path.resolve(__dirname, "dist"),
-    clean:true
+    clean:true,
+    assetModuleFilename: '[name][ext]'
   },
 devtool: 'source-map',
   module: {
@@ -40,7 +41,10 @@ devtool: 'source-map',
             presets:['@babel/preset-env']
           }
         }
-      },
+      },{
+        test:/\.(png|svg|jpg|jpeg|gif)$/i,
+        type:'asset/resource'
+      }
     ],
   },
   plugins:[
