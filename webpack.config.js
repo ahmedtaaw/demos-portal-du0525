@@ -6,7 +6,7 @@ module.exports = {
     bundle:path.resolve(__dirname, "src/app.js"),
   },
   output: {
-    filename: "[name].js",
+    filename: "[name][contenthash].js",
     path: path.resolve(__dirname, "dist"),
   },
 
