@@ -1,5 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
+
 module.exports = {
   mode:'development',
   entry: {
@@ -52,6 +54,7 @@ devtool: 'source-map',
       title:'demos-portal',
       filename: 'index.html',
       template: 'src/template.html',
-    })
+    }),
+    new BundleAnalyzerPlugin(),
   ]
 };
